@@ -41,7 +41,9 @@ Route::get('/program/kunjungan-industri',[ProgramController::class,'kunjunganInd
 // about us
 Route::get('/about-us',[AboutUsController::class,'index']);
 // contact us
-Route::get('/about-us',[ContactController::class,'index']);
+Route::get('/contact-us',[ContactController::class,'index']);
+Route::post('/contact-us/post',[ContactController::class,'store']);
+
 
 
 
